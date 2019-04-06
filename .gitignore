@@ -337,6 +337,7 @@ connectswell/media/
 
 .pytest_cache/
 
+.idea/*
 
 .env
 .envs/*
