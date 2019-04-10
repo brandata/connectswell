@@ -124,7 +124,7 @@ background-position:center;*/
 .hero {
   background-image: url(https://17d0a3abnz42sjqxm3ewa9u1-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/yoga.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /*background-size: 100% 100%;*/
   position: relative;
   background-size: cover;
   background-position: center;
@@ -139,7 +139,7 @@ background-position:center;*/
 
 }*/
 
-.navBar {
+.navbar {
   background: #000044;
 
 }
