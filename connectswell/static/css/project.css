@@ -1,16 +1,16 @@
 /* These styles are generated from project.scss. */
 
-.alert-debug {
-  color: black;
-  background-color: white;
-  border-color: #d6e9c6;
-}
+/*.alert-debug {*/
+  /*color: black;*/
+  /*background-color: white;*/
+  /*border-color: #d6e9c6;*/
+/*}*/
 
-.alert-error {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #eed3d7;
-}
+/*.alert-error {*/
+  /*color: #b94a48;*/
+  /*background-color: #f2dede;*/
+  /*border-color: #eed3d7;*/
+/*}*/
 
 
 html {
@@ -140,7 +140,7 @@ background-position:center;*/
 }*/
 
 .navBar {
-  background-color: #000044;
+  background: #000044;
 
 }
 

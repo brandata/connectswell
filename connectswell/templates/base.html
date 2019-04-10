@@ -14,20 +14,30 @@
     <![endif]-->
 
   <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'css/project.css' %}" rel="stylesheet">
   {% block css %}
 
     <!-- Latest compiled and minified Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {#    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"#}
+    {#          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">#}
 
 
     <!-- Your stuff: Third-party CSS libraries go here -->
-{#    <link href="{% static 'css/styles.css' %}" rel="stylesheet">#}
+    {#    <link href="{% static 'css/styles.css' %}" rel="stylesheet">#}
     {% compress css %}
       <!-- This file stores project-specific CSS -->
 
-      <link href="{% static 'css/project.css' %}" rel="stylesheet">
+
 
 
     {% endcompress %}
@@ -36,12 +46,10 @@
 </head>
 
 <body>
-
-
 <section class=navBar>
-  <nav class="navbar fixed-top navbar-expand-md">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/logoElements.svg" width="100" height="25" class="d-inline-block align-top" alt=""></a>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <a class="navbar-brand" href="">
+      <img src="{% static 'images/logoElements.svg' %}" width="100" height="25" class="d-inline-block align-top" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -70,6 +78,7 @@
 </section>
 
 
+
 <div class="container">
 
   {% if messages %}
@@ -79,7 +88,7 @@
   {% endif %}
 
   {% block content %}
-    <p>Use this document as a way to quick start any new project.</p>
+
   {% endblock content %}
 
 </div> <!-- /container -->
