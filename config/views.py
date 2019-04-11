@@ -43,7 +43,7 @@ def org_contact(request):
                       "City: {5}".format(sender_name, form.cleaned_data['message'],
                                          posture_choices, stress, attention, city, org_name)
 
-            send_mail('New Enquiry', message, sender_email, ['austin.haw@gmail.com'])
+            send_mail('New Enquiry from Organization', message, sender_email, ['austin.haw@gmail.com'])
             return HttpResponseRedirect('/signedup/')
     else:
         form = OrganizationForm()
@@ -71,7 +71,7 @@ def prac_contact(request):
                       "City: {5}".format(sender_name, form.cleaned_data['message'],
                                          posture_choices, stress, attention, city)
 
-            send_mail('New Enquiry', message, sender_email, ['austin.haw@gmail.com'])
+            send_mail('New Enquiry from Practitioner', message, sender_email, ['austin.haw@gmail.com'])
             return HttpResponseRedirect('/signedup/')
         # else:
         #     print("FORM NOT VALID")
