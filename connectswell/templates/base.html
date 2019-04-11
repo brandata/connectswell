@@ -73,7 +73,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="" data-toggle="modal" data-target="#modalContactForm">Contact</a>
+        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
       </li>
     </ul>
   </div>
@@ -127,7 +127,8 @@
 
         <div class="md-form">
           <i class="fas fa-pencil prefix grey-text"></i>
-          <textarea type="text" id="form8" class="md-textarea form-control" rows="4" placeholder="Type your message here~"></textarea>
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
+                    placeholder="Type your message here~"></textarea>
           <label data-error="wrong" data-success="right" for="form8"></label>
         </div>
 
@@ -139,11 +140,15 @@
   </div>
 </div>
 
-<div class="copyright py-4 text-center text-white" style="background:#000044">
+<div class="copyright py-4 text-center text-white sticky-bottom" style="background:#000044">
   <div class="container mt-3">
-          <div class="text-center">
-        <a href="" class=" mb-4" data-toggle="modal" data-target="#modalContactForm"><h4> <u>Contact</u></h4></a>
-      </div>
+    <div class="text-center">
+      <a href="{% url 'contact' %}" class=" mb-4">
+        <h4>
+          <u>Contact</u>
+        </h4>
+      </a>
+    </div>
     <small>Copyright &copy; 2019 Blossome</small>
   </div>
 </div>

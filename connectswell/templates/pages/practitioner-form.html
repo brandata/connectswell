@@ -12,7 +12,7 @@
       {% csrf_token %}
       {{ form.non_field_errors }}
       <div class="modal-body mx-3">
-        <h2 class="mb-3">Contact Us</h2>
+        <h2 class="mb-3">Practitioner Signup</h2>
         <div class="md-form mb-3">
           <i class="fas fa-user prefix grey-text"></i>
           {{ form.name.errors }}
@@ -27,11 +27,35 @@
         </div>
         <div class="md-form mb-3">
           <i class="fas fa-user prefix grey-text"></i>
-          {{ form.subject.errors }}
-          <label data-error="wrong" data-success="right">Subject: </label>
-          {{ form.subject }}
+          {{ form.city.errors }}
+          <label data-error="wrong" data-success="right">City: </label>
+          {{ form.city }}
         </div>
 
+        <h5> Please select which services you specialize in:</h5>
+        <div class="row pb-5">
+          <div class="col-sm-4">
+            <div class="fieldWrapper">
+              {{ form.posture_and_ergonomics.errors }}
+              <label for="id_sender">Posture and ergonomics:</label>
+              {{ form.posture_and_ergonomics }}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="fieldWrapper">
+              {{ form.stress_reduction.errors }}
+              <label for="id_sender">Posture and ergonomics:</label>
+              {{ form.stress_reduction }}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="fieldWrapper">
+              {{ form.attention_and_focus.errors }}
+              <label for="id_sender">Posture and ergonomics:</label>
+              {{ form.attention_and_focus }}
+            </div>
+          </div>
+        </div>
         <div class="md-form mb-3">
           <i class="fas fa-user prefix grey-text"></i>
           {{ form.message.errors }}

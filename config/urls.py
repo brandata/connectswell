@@ -15,6 +15,9 @@ urlpatterns = [
                   path("practitioners/", TemplateView.as_view(template_name="pages/practitioners.html"),
                        name="practitioners"),
                   path("contact/", views.contact_us, name="contact"),
+                  path("org-signup/", views.org_contact, name="org-signup"),
+                  path("prac-signup/", views.prac_contact, name="prac-signup"),
+                  path("signedup/", TemplateView.as_view(template_name="pages/form-redirect.html"), name="signedup"),
                   # Django Admin, use {% url 'admin:index' %}
                   path(settings.ADMIN_URL, admin.site.urls),
                   # User management
