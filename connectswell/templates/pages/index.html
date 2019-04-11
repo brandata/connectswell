@@ -6,44 +6,51 @@
   <div class="hero">
     <div class="container" id=header>
       <div class="container pt-10 pb-5">
-        <h1 class="display-2 title text-center mt-5 mb-5" id=mainTitle>We Make Wellness Work</h1>
+        <h1 class="display-1 title text-center mt-5 mb-5" id=mainTitle>We Make Wellness Work</h1>
         <h4 class="mt-5 text-center"> Blossome is connecting trusted wellness practitioners with organizations that need
           their services most.</h4>
 
-        <h4 class="display-5 text-center mt-5 mb-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
-            data-aos-delay="250" data-aos-duration="500">Let's get started. I am:</h4>
+        <h3 class="display-4 text-center mt-5 mb-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-delay="250" data-aos-duration="500">Let's get started. I am:</h3>
 
 
-        <div class="row text-center  mt-5" data-aos="zoom-in" data-aos-delay="1000"
+        <div class="row text-center mt-5 " data-aos="zoom-in" data-aos-delay="1000"
              data-aos-anchor-placement="center-bottom" data-aos-duration="500" id=startButtons>
-          <div class="col-sm">
-            <a href="practitioners.html" class="btn btn-lg btn-outline-secondary main-btn mb-3" role="button">
-              <div>
-                <h5> A wellness practitioner</h5>
-              </div>
+          <div class="col-sm m-2">
+            <a href="{% url 'practitioners' %}" class="btn btn-lg btn-outline-secondary main-btn" role="button">
+                <h5 class="mb-0 m-1"> A wellness practitioner</h5>
             </a>
           </div>
 
-          <div class="col-sm">
-            <a href="organizations.html" class="btn btn-lg btn-outline-secondary main-btn"><h5>Planning a wellness
-              program</h5></a>
+          <div class="col-sm m-2">
+            <a href="{% url 'organizations' %}" class="btn btn-lg btn-outline-secondary main-btn">
+              <h5 class="mb-0 m-1">Planning a wellness program</h5>
+            </a>
           </div>
         </div>
 
 
         <blockquote class="blockquote text-center pt-5 mt-5 pb" id="testemonial">
-          <p class="mb-0 lead" style="color:white">"My workplace has never felt better!" </p>
+          <h5 class="mb-0" style="color:white">"My workplace has never felt better!" </h5>
           <footer class="blockquote-footer">Brandon H.<cite title="Source Title">Toronto Business Owner</cite>
           </footer>
         </blockquote>
 
       </div>
     </div>
+
   </div>
+
   <!-- End Header -->
+  <div class="text-center" data-aos="zoom-in" data-aos-delay="2000"
+             data-aos-anchor-placement="center-bottom" data-aos-duration="500" id=startButtons>
+    <a href="{% url 'index' %}#info"><i class="fas fa-angle-down fa-3x"></i></a>
+    <a name="info"></a>
+  </div>
 
 
   <!-- Start CARDS -->
+
   <div class="container text-center justify-content-around mt-5" data-aos="fade-down"
        data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
     <h3 class="font-weight-light mb-3">Key Features</h3>
@@ -243,7 +250,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
                 <div class="card-body">
                   Neurofeedback is the process of "mirroring" the central nervous system, or CNS back on itself using an
                   EEg brain scan. This self reflective technique has been shown to have many benefits in stress
@@ -252,7 +259,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -261,9 +267,9 @@
   <div class=" container text-center mt-5 mb-5">
     <p class="lead"> Our innovative programs are changing the role of wellness in organizations of all types and
       sizes.</p>
-    <a href="about.html" class="btn btn-lg btn-outline-secondary main-btn mb-5" role="button" data-aos="zoom-in"
+    <a href="{% url 'about' %}" class="btn btn-lg btn-outline-secondary main-btn mb-5" role="button" data-aos="zoom-in"
        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
-      Learn More
+      <h5>Learn More</h5>
     </a>
   </div>
   {#end cards#}
@@ -307,72 +313,27 @@
   <div class="programBuilder container pb-1 ">
     <div class="row">
       <div class="col">
-        <p class="display-2 text-center mt-5 mb-3">Try our Wellness Packages</p>
-        <p class="lead text-center mt-3"> The Blossome tool is a no-hassle way to book flexible in-office wellness
+        <p class="display-2 text-center mt-10 mb-3">Try our Wellness Packages</p>
+        <p class="lead text-center mt-3"> Blossome is a no-hassle way to book flexible in-office wellness
           programs.
         <p>
         <p class="lead text-center"><strong>Enter the size of your group </strong> and <strong> select the desired
           services</strong> to receive a quote! </p>
       </div>
       <div class=" container text-center mt-3 mb-5">
-        <a href="organizations.html" class="btn btn-lg btn-outline-secondary main-btn mt-5" role="button">
-          Book Now
+        <a href="{% url 'organizations' %}" class="btn btn-lg btn-outline-secondary main-btn mt-5" role="button">
+          <h5 class="mb-0 m-1">Book Now</h5>
         </a>
       </div>
     </div>
     <div class=" border container mt-10 mb-10">
-      <h1 class=" display-4 text-center mb-5 mt-5">Blossome App Coming Soon</h1>
+      <p class=" display-2 text-center mb-5 mt-5">Blossome App Coming Soon</p>
       <p class="lead text-center"> Please use our contact form to receive early access
         to our platform.</p>
-
     </div>
-
-
   </div>
 
 
-  {#<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"#}
-  {#     aria-hidden="true">#}
-  {#  <div class="modal-dialog" role="document">#}
-  {#    <div class="modal-content">#}
-  {#      <div class="modal-header text-center">#}
-  {#        <h4 class="modal-title w-100 font-weight-bold">Questions?</h4>#}
-  {#        <button type="button" class="close" data-dismiss="modal" aria-label="Close">#}
-  {#          <span aria-hidden="true">&times;</span>#}
-  {#        </button>#}
-  {#      </div>#}
-  {#      <div class="modal-body mx-3">#}
-  {#        <div class="md-form mb-5">#}
-  {#          <i class="fas fa-user prefix grey-text"></i>#}
-  {#          <input type="text" id="form34" class="form-control validate">#}
-  {#          <label data-error="wrong" data-success="right" for="form34">Your name</label>#}
-  {#        </div>#}
-  {##}
-  {#        <div class="md-form mb-5">#}
-  {#          <i class="fas fa-envelope prefix grey-text"></i>#}
-  {#          <input type="email" id="form29" class="form-control validate">#}
-  {#          <label data-error="wrong" data-success="right" for="form29">Your email</label>#}
-  {#        </div>#}
-  {##}
-  {#        <div class="md-form mb-5">#}
-  {#          <i class="fas fa-tag prefix grey-text"></i>#}
-  {#          <input type="text" id="form32" class="form-control validate">#}
-  {#          <label data-error="wrong" data-success="right" for="form32">Subject</label>#}
-  {#        </div>#}
-  {##}
-  {#        <div class="md-form">#}
-  {#          <i class="fas fa-pencil prefix grey-text"></i>#}
-  {#          <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>#}
-  {#          <label data-error="wrong" data-success="right" for="form8">Your message</label>#}
-  {#        </div>#}
-  {##}
-  {#      </div>#}
-  {#      <div class="modal-footer d-flex justify-content-center">#}
-  {#        <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>#}
-  {#      </div>#}
-  {#    </div>#}
-  {#  </div>#}
-  </div>
 
   <!-- Javascript -->
 

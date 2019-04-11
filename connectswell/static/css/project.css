@@ -1,10 +1,40 @@
 
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
   scroll-behavior: smooth;
   color:#000044;
 
+}
+h1{
+  color:#000044;
+}
+
+
+h3{
+color:#000044;
+}
+
+h4{
+color:white;
+}
+
+h5{
+  font-size: 22px;
+  color:#000044;
+}
+
+blockquote{
+  color:white;
+}
+
+.display-2 {
+  font-size: 4em;
+  color: #000044;
+}
+.display-4 {
+  font-size: 3em;
+  color: white;
 }
 
 @include media-breakpoint-up(sm) {
@@ -25,7 +55,7 @@ html {
   }
 }
 p {
-  font-size: 16px;
+  font-size:1rem;
   color:#000044;
 
 }
@@ -47,34 +77,46 @@ p {
     font-size: 1.6rem;
   }
 }
-h1{
-  color:#000044;
+
+@include media-breakpoint-up(sm) {
+  h5 {
+    font-size: 0.8rem;
+  }
 }
 
-h4{
-color:white;
+@include media-breakpoint-up(md) {
+  h5 {
+    font-size: 1.4rem;
+  }
 }
 
-h3{
-color:white;
+@include media-breakpoint-up(lg) {
+  h5 {
+    font-size: 1.6rem;
+  }
 }
-
-h5{
-color:#000044;
-font-size:25px;
-}
-
-blockquote{
-  color:white;
-}
-
-.display-2 {
-  font-size: 4em;
-  color:#000044;
 
 
 
 }
+@include media-breakpoint-up(sm) {
+  .display-1 {
+    font-size: 1rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .display-1 {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .display-1 {
+    font-size: 1.6rem;
+  }
+}
+
 
 @include media-breakpoint-up(sm) {
   .display-2 {
@@ -106,7 +148,7 @@ color:#000044;
   /*mix-blend-mode:difference;*/
 }
 .headText{
-  font-color:white;
+  color:white;
 }
 
 #header{
@@ -145,6 +187,12 @@ background-position:center;
 .nav-link:hover{
   text-transform:underline;
   color:#FFCC99;
+  transform: translateY(-3px);
+}
+.nav-link:active{
+  text-transform:underline;
+  color:#FFCC99;
+    transform: translateY(2px);
 }
 .navbar-toggler{
   color:white;
@@ -153,14 +201,10 @@ background-position:center;
 .btn{
   vertical-align:baseline;
   border-radius:15px;
-  border-width:8px;
-  border-color:white;
+  border:none;
 }
 
-.btn:hover{
-  background-color:white;
-  color:#FFCC99;
-}
+
 
 .btn-link{
   background-color:white;
@@ -176,18 +220,23 @@ background-position:center;
 .main-btn{
   background-color:orange;
   white-space:  normal;
-  width:70%;
+  width:80%;
   padding-top:2rem;
   padding-bottom:2rem;
   opacity:1;
-  border-color:#000044;
-  color:white;
-  border:5px;
+  box-shadow: 2px 3px #6f6f6f;
 
 }
+
 .main-btn:hover{
+  background-color: rgba(228, 142, 0, 01);
   color:#FFCC99;
-  opacity:1;
+}
+
+.main-btn:active{
+  background-color: #C66500;
+  box-shadow: 0 5px #000000;
+  transform: translateY(3px);
 }
 
 .downArrow{
@@ -197,6 +246,7 @@ background-position:center;
 
 i{
   font-style:italic;
+
 }
 
 
