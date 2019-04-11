@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-color:#000044;
+  color:#000044;
 
 }
 
@@ -57,17 +57,15 @@ color:white;
 
 h3{
 color:white;
-
 }
-
 
 h5{
 color:#000044;
-
+font-size:25px;
 }
 
 blockquote{
-  font-color:white;
+  color:white;
 }
 
 .display-2 {
@@ -98,18 +96,22 @@ blockquote{
 
 i{
   color:#000044;
+
 }
 .lead{
 color:#000044;
 }
 #mainTitle{
   color:white;
-  mix-blend-mode:difference;
+  /*mix-blend-mode:difference;*/
 }
 .headText{
   font-color:white;
 }
 
+#header{
+
+}
 
 
 /*End fonts*/
@@ -117,11 +119,15 @@ body{
 
 }
 .hero{
- background-image:url(https://17d0a3abnz42sjqxm3ewa9u1-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/yoga.jpg);
+ background:linear-gradient(
+      rgba(0, 0, 68, 0.5),
+      transparent
+    ),
+   url(https://17d0a3abnz42sjqxm3ewa9u1-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/yoga.jpg);
+
 background-repeat:no-repeat;
-background-size:100% 100%;
-position: relative;
 background-size:cover;
+position: relative;
 background-position:center;
 }
 
@@ -130,10 +136,7 @@ background-position:center;
 
 }
 
-.btn:hover{
-  background-color:white;
-  color:#FFCC99;
-}
+
 
 .nav-link{
   color:white;
@@ -143,11 +146,21 @@ background-position:center;
   text-transform:underline;
   color:#FFCC99;
 }
-.navbar-toggler-icon{
+.navbar-toggler{
   color:white;
 }
 
+.btn{
+  vertical-align:baseline;
+  border-radius:15px;
+  border-width:8px;
+  border-color:white;
+}
 
+.btn:hover{
+  background-color:white;
+  color:#FFCC99;
+}
 
 .btn-link{
   background-color:white;
@@ -175,7 +188,6 @@ background-position:center;
 .main-btn:hover{
   color:#FFCC99;
   opacity:1;
-  text-transform: bold;
 }
 
 .downArrow{

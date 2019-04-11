@@ -41,7 +41,7 @@
         </div>
       <!-- Button trigger modal -->
         <button type="button" class="btn btn-outline-secondary main-btn mt-5 mb-5" data-toggle="modal" data-target=#practitionerModal>
-          New Practitioner Sign Up
+          <h5>Apply</h5>
         </button>
     
         <!-- Modal -->
@@ -63,36 +63,28 @@
 
              <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputPractitionerName">Name</label>
-                  <input type="password" class="form-control" id="inputPractitionerName" placeholder="First and Last Name">
+                  <input type="password" class="form-control" id="inputPractitionerFirst" placeholder="First Name" alt="First Name">
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="inputPractitionerEmail lead">Email</label>
-                  <input type="email" class="form-control" id="inputPractitionerEmail" placeholder="Email">
+               <div class="form-group col-md-6">
+                  <input type="password" class="form-control" id="inputPractitionerLast" placeholder="Last Name" alt="Last Name">
                 </div>
+
               </div>
+
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="inputAddress lead">Address</label>
-                  <input type="text" class="form-control" id="practitionerAddress" placeholder="1234 Main St">
+
+                  <input type="email" class="form-control" id="inputPractitionerEmail" placeholder="Email" alt="Email Address">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="inputAddress2 lead">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  <input type="text" class="form-control" id="inputCity" placeholder="City" alt="City">
                 </div>
               </div>
-
-              <div class="form-row">
-                <div class="form-group col-md">
-                  <label for="inputCity lead">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-              </div>
-            
               <!-- Service Types -->
-              <div class="row"
+              <div class="row">
                 <div class="form-group col-md mt-3">
-                  <label for="practitionerServiceType"> <p class=lead>Service Type (ctrl+click to select multiple)</p></label>
+                  <label for="practitionerServiceType"> <p class="lead text-center">Service Type (ctrl+click to select multiple)</p></label>
                   <select multiple class="form-control mb-3" id="practitionerServiceType">
                     <optgroup label="Posture & Ergonomics">
                       <option>Yoga</option>
@@ -121,11 +113,12 @@
                         <label for="inputRate">Average Hourly Rate</label>
                         <input type="text" class="form-control" id="input">
                       </div>
-
-                      <div class="form-group col-md-6">
+                  </div>
+                  <div>
+                    <div class="form-group col-md-6">
                             <div class=row>
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="insured" value="insurec">
+                                <input class="form-check-input" type="checkbox" id="insured" value="insured">
                                 <label class="form-check-label" for="insured">Insured</label>
                               </div>
                             </div>
@@ -137,7 +130,9 @@
                               </div>
                             </div>
                           </div>
-                      </div>  
+                  </div>
+
+
                         <div class="row">
                   
                           <div class="row form-group w-100">
@@ -171,14 +166,14 @@
 
     <h1 class="font-weight-light text-center mb-5 mt-3" data-aos-delay="500" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-right">  Our process</h1>
     <div class="row mb-3">
-      <div class="col-md-4" data-aos-delay="500" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up"> 
+      <div class="col-md-4" align="center" data-aos-delay="500" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up">
          <i class="material-icons md-72 mt-1">how_to_reg</i>
         <p class="lead mt-1"><strong> Apply </strong></p></div>
-      <div class="col-md-4" data-aos-delay="1000" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up">
+      <div class="col-md-4" align="center" data-aos-delay="1000" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up">
           <i class="material-icons md-72 mt-1 mb-3">record_voice_over</i>
           <p class="lead"> <strong> Lead Classes </strong> </p>
       </div>
-      <div class="col-md-4" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up">
+      <div class="col-md-4" align="center" data-aos-delay="1500" data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000" data-aos="fade-up">
         <i class="fas fa-hand-holding-usd fa-4x mt-2 mb-3"></i>
           <p class="lead"> <strong>Get Paid</strong></p>
       </div>
