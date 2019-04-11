@@ -1,45 +1,32 @@
-/* These styles are generated from project.scss. */
-
-/*.alert-debug {*/
-  /*color: black;*/
-  /*background-color: white;*/
-  /*border-color: #d6e9c6;*/
-/*}*/
-
-/*.alert-error {*/
-  /*color: #b94a48;*/
-  /*background-color: #f2dede;*/
-  /*border-color: #eed3d7;*/
-/*}*/
 
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  font-color: #000044;
+  font-color:#000044;
 
 }
 
 @include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
   html {
     font-size: 1rem;
   }
 }
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
 p {
   font-size: 16px;
-  color: #000044;
+  color:#000044;
 
 }
 
@@ -60,17 +47,33 @@ p {
     font-size: 1.6rem;
   }
 }
-h1 {
-  color: #000044;
+h1{
+  color:#000044;
 }
 
-h5 {
-  color: #000044;
+h4{
+color:white;
+}
+
+h3{
+color:white;
+
+}
+
+
+h5{
+color:#000044;
+
+}
+
+blockquote{
+  font-color:white;
 }
 
 .display-2 {
   font-size: 4em;
-  color: #000044;
+  color:#000044;
+
 
 
 }
@@ -93,201 +96,159 @@ h5 {
   }
 }
 
-i {
-  color: #000044;
+i{
+  color:#000044;
+}
+.lead{
+color:#000044;
+}
+#mainTitle{
+  color:white;
+  mix-blend-mode:difference;
+}
+.headText{
+  font-color:white;
 }
 
-.lead {
-  color: #000044;
-}
-
-#mainTitle {
-  color: white;
-  mix-blend-mode: difference;
-}
-
-.headText {
-  font-color: white;
-}
 
 
 /*End fonts*/
-body {
+body{
 
-  /* background-repeat:no-repeat;
+}
+.hero{
+ background-image:url(https://17d0a3abnz42sjqxm3ewa9u1-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/yoga.jpg);
+background-repeat:no-repeat;
 background-size:100% 100%;
 position: relative;
 background-size:cover;
-background-position:center;*/
+background-position:center;
 }
 
-.hero {
-  background-image: url(https://17d0a3abnz42sjqxm3ewa9u1-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/yoga.jpg);
-  background-repeat: no-repeat;
-  /*background-size: 100% 100%;*/
-  position: relative;
-  background-size: cover;
-  background-position: center;
-}
-
-/*#header{
-  position:relative;
-  background:#000044;
-  opacity:0.7;
-  background-size:100% 100%;
-  z-index:0;
-
-}*/
-
-.navbar {
-  background: #000044;
+.navbar{
+  background-color:#000044;
 
 }
 
-.btn:hover {
-  background-color: white;
-  color: #FFCC99;
+.btn:hover{
+  background-color:white;
+  color:#FFCC99;
 }
 
-.nav-link {
-  color: white;
+.nav-link{
+  color:white;
 }
 
-.nav-link:hover {
-  /* font-weight:bold;*/
-  color: #FFCC99;
+.nav-link:hover{
+  text-transform:underline;
+  color:#FFCC99;
 }
-
-.navbar-toggler-icon {
-  color: white;
-}
-
-.startButtons {
-  /*  display:none;*/
-}
-
-.btn {
-  white-space: normal;
-}
-
-.btn-link {
-  background-color: white;
-  color: #000044;
-  text-decoration: none;
-}
-
-.btn-link:hover {
-  text-decoration: none !important;
-  background-color: white;
+.navbar-toggler-icon{
+  color:white;
 }
 
 
-.main-btn {
-  background-color: white;
-  white-space: normal;
-  width: 70%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  opacity: 0.8;
-  border-color: #000044;
-  color: #000044;
 
+.btn-link{
+  background-color:white;
+  color:#000044;
+  text-decoration:none;
 }
 
-.main-btn:hover {
-  color: #FFCC99;
-  opacity: 1;
+.btn-link:hover{
+  text-decoration:none !important;
+}
+
+
+.main-btn{
+  background-color:orange;
+  white-space:  normal;
+  width:70%;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  opacity:1;
+  border-color:#000044;
+  color:white;
+  border:5px;
+
+}
+.main-btn:hover{
+  color:#FFCC99;
+  opacity:1;
   text-transform: bold;
 }
 
-.downArrow {
+.downArrow{
   height: 5%;
   width: 10%;
 }
 
-i {
-  font-style: italic;
+i{
+  font-style:italic;
 }
 
 
-#ContactHeader {
-  font-color: white;
-  background-color: #000044;
+
+.material-contact-section{
+  font-color:white;
+  background-color:#000044;
 }
 
 
 /*Start Practitioner PAge*/
-#practitionerText {
-  width: 100%;
+#practitionerText{
+  width:100%;
 }
 
-@media (max-width: 45em) {
-  .card-img-top {
-    display: none;
-  }
+@media (max-width: 60em) {
+.card-img-top {
+display: none;
+}
 }
 
-@media (max-width: 45em) {
-  #accordion {
-    display: none;
-  }
+@media (max-width: 60em) {
+#accordion {
+display: none;
+}
 }
 
 /*Margins and Padding*/
-.pt-10 {
-  padding-top: 10%;
+.pt-10{
+  padding-top:10%;
 }
 
-.mt-10 {
-  margin-top: 10%;
+.mt-10{
+  margin-top:10%;
+}
+.mb-10{
+  margin-bottom:10%;
 }
 
-.mb-10 {
-  margin-bottom: 10%;
+.pt-15{
+  padding-top:15%;
 }
 
-.pt-15 {
-  padding-top: 15%;
+.mt-15{
+  margin-top:15%;
 }
 
-.mt-15 {
-  margin-top: 15%;
+.mb-15{
+  margin-bottom:15%;
+}
+.pb-15{
+padding-bottom: 15%;
 }
 
-.mb-15 {
-  margin-bottom: 15%;
-}
-
-.pb-15 {
-  padding-bottom: 15%;
-}
 
 
 /*Pracitioner Page*/
-.practitionerInfo {
-  margin-top: 10%;
-}
+
 
 /*icons*/
 
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-24 {
-  font-size: 24px;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
-}
-
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
-.material-icons.md-72 {
-  font-size: 72px;
-}
-
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
 /*.fas {color:grey;}*/
