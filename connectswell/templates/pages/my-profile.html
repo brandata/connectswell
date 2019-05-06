@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container text-center mt-10">
+    <h2 class="display-2"> My Profile</h2>
+</div>
+<div class="container-fluid">
+    <div class="col-sm-4">
+
+        <p class="lead"> 14</p>
+      <h3> Total Points</h3>
+      <a href="{% url '' %}" class="btn btn-lg btn-outline-secondary main-btn">
+              <h5 class="mb-0 m-1">Get Points</h5>
+      </a>
+    </div>
+    <div class="col-sm-4">
+        <h3>Next Reward</h3>
+        <h3>Free Meal and Fresh : <span style="color:orange"></span>20pts</h3>
+       <a href="{% url '' %}" class="btn btn-lg btn-outline-secondary main-btn">
+              <h5 class="mb-0 m-1">View Rewards</h5>
+      </a>
+    </div>
+    <div class="col-sm-4">
+        <h3>Win Prizes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae doloremque ea eligendi fuga iusto.
+            Aliquid architecto deserunt distinctio dolor dolorum error eveniet facere magnam sequi, ullam. Ab adipisci
+            aperiam architecto atque blanditiis commodi earum esse, est illo, inventore laborum placeat quae qui
+            recusandae repellat similique soluta tempora vel voluptate.</p>
+
+    </div>
+</div>
+<div class="container mt-5 text-center">
+    <div class="row">
+        <h3> Beta Test</h3>
+    </div>
+    <div class="row">
+        <h3>Beta Test</h3>
+        <p>Beta Test Info</p>
+    </div>
+</div>
+
+
+{% endblock content %}
