@@ -42,10 +42,14 @@ USE_TZ = True
 
 DATABASES = {
     "default": env.db(
-        "DATABASE_URL", default="postgres:///connectswell"
+        "DATABASE_URL", default="postgres:///connectswell",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
+DATABASES["default"]["PASSWORD"] = 'aussy612'
+DATABASES["default"]["USER"] = 'postgres'
+
+print(DATABASES)
 
 # URLS
 # ------------------------------------------------------------------------------
